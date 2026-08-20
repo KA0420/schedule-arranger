@@ -15,4 +15,7 @@ WORKDIR /app
 COPY . /app
 RUN yarn install
 RUN npx webpack
+
+RUN chmod +x run.sh
+
 CMD ["sh", "run.sh"]
