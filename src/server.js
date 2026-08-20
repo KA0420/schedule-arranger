@@ -1,7 +1,7 @@
 const { serve } = require('@hono/node-server');
 const app = require('./app');
 
-const port = Number(process.env.PORT) || 3000;
+const port = Number(process.env.PORT) || 5432;
 
 serve({
   fetch: app.fetch,
